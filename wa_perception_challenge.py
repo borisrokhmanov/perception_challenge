@@ -3,8 +3,6 @@ import cv2
 img = cv2.imread("/Users/boris/Documents/python/perception_challenge/red.png")
 height, width, _ = img.shape #get height, width, and midpoint of image
 midpoint = width // 2
-imgL = img[:, :midpoint] #split img into left and right halves
-imgR = img[:, midpoint:]
 
 #creates mask and applies it to image
 hsvImg = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) #convert to HSV from BGR
